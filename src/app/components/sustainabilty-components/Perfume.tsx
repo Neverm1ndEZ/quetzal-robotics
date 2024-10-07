@@ -5,17 +5,17 @@ import { Droplet, Wind, Clock, Star } from "lucide-react";
 export default function Perfume() {
 	const features = [
 		{
-			icon: <Droplet className="h-6 w-6 text-red-600" />,
+			icon: <Droplet className="h-6 w-6 text-[#0D6E78]" />,
 			title: "Top Notes",
 			description: "The initial impression - citrus, lavender, bergamot",
 		},
 		{
-			icon: <Wind className="h-6 w-6 text-red-600" />,
+			icon: <Wind className="h-6 w-6 text-[#0D6E78]" />,
 			title: "Heart Notes",
 			description: "The essence - rose, jasmine, ylang-ylang",
 		},
 		{
-			icon: <Clock className="h-6 w-6 text-red-600" />,
+			icon: <Clock className="h-6 w-6 text-[#0D6E78]" />,
 			title: "Base Notes",
 			description: "The lasting impression - vanilla, musk, sandalwood",
 		},
@@ -40,7 +40,7 @@ export default function Perfume() {
 			<div className="mb-16 text-center">
 				<Typography
 					variant="h1"
-					className="text-5xl font-bold mb-4 text-red-900"
+					className="text-5xl font-bold mb-4 text-[#0D6E78]"
 					placeholder=""
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
@@ -60,7 +60,7 @@ export default function Perfume() {
 				<div className="flex justify-center gap-4">
 					<Button
 						size="lg"
-						className="bg-red-600 hover:bg-red-700"
+						className="bg-[#0D6E78] hover:bg-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -70,7 +70,7 @@ export default function Perfume() {
 					<Button
 						size="lg"
 						variant="outlined"
-						className="border-red-600 text-red-600 hover:border-red-700"
+						className="border-[#0D6E78] text-[#0D6E78] hover:border-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -108,7 +108,7 @@ export default function Perfume() {
 				{features.map((feature, index) => (
 					<Card
 						key={index}
-						className="hover:shadow-lg transition-shadow border border-red-100"
+						className="hover:shadow-lg transition-shadow border border-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -119,12 +119,12 @@ export default function Perfume() {
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}
 						>
-							<div className="mb-4 w-12 h-12 mx-auto bg-red-50 rounded-full flex items-center justify-center">
+							<div className="mb-4 w-12 h-12 mx-auto bg-[#0D6E78] rounded-full flex items-center justify-center">
 								{feature.icon}
 							</div>
 							<Typography
 								variant="h5"
-								className="mb-2 text-red-900"
+								className="mb-2 text-[#0D6E78]"
 								placeholder=""
 								onPointerEnterCapture={undefined}
 								onPointerLeaveCapture={undefined}
@@ -149,7 +149,7 @@ export default function Perfume() {
 				<div>
 					<Typography
 						variant="h3"
-						className="text-3xl font-semibold mb-6 text-red-700"
+						className="text-3xl font-semibold mb-6 text-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -171,7 +171,7 @@ export default function Perfume() {
 					</Typography>
 					<Button
 						variant="outlined"
-						className="flex items-center gap-2 border-red-600 text-red-600 hover:border-red-700"
+						className="flex items-center gap-2 border-[#0D6E78] text-[#0D6E78] hover:border-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -185,7 +185,7 @@ export default function Perfume() {
 			<div className="mb-16">
 				<Typography
 					variant="h4"
-					className="text-center mb-8 text-red-700"
+					className="text-center mb-8 text-[#0D6E78]"
 					placeholder=""
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
@@ -196,7 +196,7 @@ export default function Perfume() {
 					{testimonials.map((testimonial, index) => (
 						<Card
 							key={index}
-							className="border border-red-100"
+							className="border border-[#0D6E78]"
 							placeholder=""
 							onPointerEnterCapture={undefined}
 							onPointerLeaveCapture={undefined}

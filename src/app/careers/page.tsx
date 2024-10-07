@@ -6,19 +6,19 @@ import { Users, Trophy, Leaf } from "lucide-react";
 export default function page() {
 	const benefits = [
 		{
-			icon: <Leaf className="w-8 h-8 text-red-600" />,
+			icon: <Leaf className="w-8 h-8 text-[#0D6E78]" />,
 			title: "Sustainable Impact",
 			description:
 				"Make a real difference in the fight against climate change while working with cutting-edge renewable technologies.",
 		},
 		{
-			icon: <Users className="w-8 h-8 text-red-600" />,
+			icon: <Users className="w-8 h-8 text-[#0D6E78]" />,
 			title: "Collaborative Culture",
 			description:
 				"Join a team of passionate experts in renewable energy, fostering innovation and knowledge sharing.",
 		},
 		{
-			icon: <Trophy className="w-8 h-8 text-red-600" />,
+			icon: <Trophy className="w-8 h-8 text-[#0D6E78]" />,
 			title: "Growth Opportunities",
 			description:
 				"Benefit from continuous learning, career advancement paths, and professional development programs.",
@@ -34,7 +34,7 @@ export default function page() {
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
 					variant="h1"
-					className="text-4xl font-bold text-gray-900 mb-4"
+					className="text-4xl font-bold text-[#0D6E78] mb-4"
 				>
 					Join Our Mission for a Sustainable Future
 				</Typography>
@@ -54,7 +54,7 @@ export default function page() {
 			<div className="mb-16">
 				<Typography
 					variant="h2"
-					className="text-3xl font-bold text-center text-gray-900 mb-12"
+					className="text-3xl font-bold text-center text-[#0D6E78] mb-12"
 					placeholder=""
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
@@ -104,7 +104,7 @@ export default function page() {
 			>
 				<Typography
 					variant="h3"
-					className="text-2xl font-bold text-center mb-8"
+					className="text-2xl font-bold text-center mb-8 text-[#2d565a]"
 					placeholder=""
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
@@ -116,7 +116,7 @@ export default function page() {
 						<Input
 							type="text"
 							label="First Name"
-							color="red"
+							color="teal"
 							className=""
 							placeholder=""
 							onPointerEnterCapture={undefined}
@@ -126,7 +126,7 @@ export default function page() {
 						<Input
 							type="text"
 							label="Last Name"
-							color="red"
+							color="teal"
 							className=""
 							placeholder=""
 							onPointerEnterCapture={undefined}
@@ -137,7 +137,7 @@ export default function page() {
 					<Input
 						type="email"
 						label="Email Address"
-						color="red"
+						color="teal"
 						className=""
 						placeholder=""
 						onPointerEnterCapture={undefined}
@@ -147,7 +147,7 @@ export default function page() {
 					<Input
 						type="tel"
 						label="Phone Number"
-						color="red"
+						color="teal"
 						className=""
 						placeholder=""
 						onPointerEnterCapture={undefined}
@@ -168,7 +168,7 @@ export default function page() {
 						<Input
 							type="file"
 							accept=".pdf,.doc,.docx"
-							color="red"
+							color="teal"
 							className=""
 							placeholder=""
 							onPointerEnterCapture={undefined}
@@ -187,7 +187,7 @@ export default function page() {
 						</Typography>
 					</div>
 					<Button
-						className="w-full bg-red-600 hover:bg-red-700"
+						className="w-full bg-[#0D6E78] hover:bg-[#0D6E78]"
 						size="lg"
 						placeholder=""
 						onPointerEnterCapture={undefined}
@@ -209,7 +209,7 @@ export default function page() {
 					Have questions? Contact our HR team at{" "}
 					<a
 						href="mailto:careers@binnynewre.com"
-						className="text-red-600 hover:text-red-700"
+						className="text-[#0D6E78] hover:text-[#0D6E78]"
 					>
 						careers@binnynewre.com
 					</a>

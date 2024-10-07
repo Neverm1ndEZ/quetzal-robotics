@@ -56,7 +56,7 @@ export function Modal({ buttonText, heading, message }: ModalProps) {
 		<>
 			<Button
 				onClick={handleOpen}
-				color="red"
+				color="teal"
 				variant="text"
 				className="p-0 hover:p-4 flex items-center gap-2"
 				placeholder=""

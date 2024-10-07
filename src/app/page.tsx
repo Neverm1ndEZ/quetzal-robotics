@@ -2,7 +2,7 @@ import Contact from "./components/homepage-components/Contact";
 import Energy from "./components/homepage-components/Energy";
 import Hero from "./components/homepage-components/Hero";
 import LongCard from "./components/homepage-components/LongCard";
-import { Testimonials } from "./components/homepage-components/Testimonials";
+import { ClientShowcase } from "./components/homepage-components/Testimonials";
 
 export default function Home() {
 	return (
@@ -12,7 +12,7 @@ export default function Home() {
 				<Energy />
 				<LongCard />
 				{/* <Leadership /> */}
-				<Testimonials />
+				<ClientShowcase />
 				<Contact />
 			</div>
 		</main>

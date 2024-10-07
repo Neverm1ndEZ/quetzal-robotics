@@ -29,7 +29,7 @@ const LeadershipCard: React.FC<LeadershipCardProps> = ({
 			/>
 		</div>
 		<div className="flex flex-col justify-start items-start gap-y-3">
-			<h2 className="text-2xl font-bold text-red-600">{name}</h2>
+			<h2 className="text-2xl font-bold text-[#0D6E78]">{name}</h2>
 			<h3 className="text-lg font-medium text-gray-700">{position}</h3>
 			<p className="text-base text-gray-600 max-w-md">{message}</p>
 			<Modal buttonText="Read More" heading={name} message={longMessage} />
@@ -41,11 +41,11 @@ export default function Leadership() {
 	return (
 		<div className="mt-16 px-4 lg:px-0">
 			<div className="flex justify-start mb-6">
-				<h1 className="text-xl uppercase font-bold text-red-700 border-b-2 border-red-500 pb-2">
+				<h1 className="text-xl uppercase font-bold text-[#0D6E78] border-b-2 border-[#0D6E78] pb-2">
 					Leadership Speaks
 				</h1>
 			</div>
-			<div className="w-full grid lg:grid-cols-2 gap-8 bg-gradient-to-b from-red-200 to-white rounded-xl p-8">
+			<div className="w-full grid lg:grid-cols-2 gap-8 bg-gradient-to-b from-[#0D6E78] to-white rounded-xl p-8">
 				<LeadershipCard
 					name="Mohammed Abdul Salman"
 					position="Executive Director"

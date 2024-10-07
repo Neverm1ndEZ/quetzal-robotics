@@ -25,7 +25,7 @@ const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
 			/>
 		</div>
 		<div className="p-6">
-			<h3 className="text-xl sm:text-2xl font-bold text-red-700 mb-3">
+			<h3 className="text-xl sm:text-2xl font-bold text-[#0D6E78] mb-3">
 				{title}
 			</h3>
 			<p className="text-sm sm:text-base text-gray-600 mb-4">{description}</p>

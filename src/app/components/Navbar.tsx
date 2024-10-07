@@ -77,7 +77,7 @@ const NavListMenuItem = memo(
 				<div>
 					<Typography
 						variant="h6"
-						color="red"
+						color="teal"
 						className="flex items-center text-sm font-bold"
 						placeholder={undefined}
 						onPointerEnterCapture={undefined}
@@ -129,8 +129,10 @@ const NavListMenu = () => {
 			>
 				<MenuHandler>
 					<Typography
-						as="div"
+						as="a"
+						href={"/case-studies"}
 						variant="small"
+						color="blue-gray"
 						className="font-medium"
 						placeholder={undefined}
 						onPointerEnterCapture={undefined}

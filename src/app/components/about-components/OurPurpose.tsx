@@ -38,39 +38,39 @@ export default function OurPurpose() {
 						<h1 className="text-2xl sm:text-3xl font-bold uppercase text-white">
 							Our Vision
 						</h1>
-						<p className="text-3xl sm:text-6xl font-medium text-red-300">
+						<p className="text-3xl sm:text-6xl font-medium text-[#0D6E78]">
 							To be the leading force in sustainable energy solutions.
 						</p>
 					</div>
 				</div>
 
 				{/* Mission Section */}
-				<div className="w-full sm:w-1/2 bg-red-900 flex items-center justify-center py-8">
+				<div className="w-full sm:w-1/2 bg-[#0D6E78] flex items-center justify-center py-8">
 					<div className="max-w-[90%] sm:max-w-[80%] p-5 sm:p-10 space-y-5">
 						<h1 className="text-2xl sm:text-4xl font-bold uppercase text-white">
 							Our Mission
 						</h1>
-						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-red-100">
+						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-[#0D6E78]">
 							<div>
 								<CheckCheck className="text-2xl" />
 							</div>{" "}
 							Delivering innovative clean energy systems for a reder future.
 						</div>
-						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-red-100">
+						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-[#0D6E78]">
 							<div>
 								<CheckCheck className="text-2xl" />
 							</div>{" "}
 							Develop and produce cutting-edge biofuels and ethanol to reduce
 							carbon emissions and decrease fossil fuel dependence.
 						</div>
-						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-red-100">
+						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-[#0D6E78]">
 							<div>
 								<CheckCheck className="text-2xl" />
 							</div>{" "}
 							Harness innovative technology and renewable resources to create a
 							cleaner, reder future.
 						</div>
-						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-red-100">
+						<div className="flex items-center gap-4 text-sm sm:text-base font-medium text-[#0D6E78]">
 							<div>
 								<CheckCheck className="text-2xl" />
 							</div>{" "}

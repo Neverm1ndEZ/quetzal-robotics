@@ -32,7 +32,7 @@ export default function page() {
 					onPointerLeaveCapture=""
 					className="flex justify-center items-center bg-gray-200 p-2 w-full md:w-1/2 lg:w-1/3 mx-auto my-5"
 					indicatorProps={{
-						className: `bg-red-100 rounded-md shadow`,
+						className: `bg-[#0D6E78] rounded-md shadow`,
 					}}
 				>
 					{data.map(({ label, value }) => (

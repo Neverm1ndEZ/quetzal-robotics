@@ -73,7 +73,7 @@ export default function Footer() {
 						</div>
 					</div>
 					<div>
-						<h3 className="text-lg font-semibold mb-4 text-[#A21A1D]">
+						<h3 className="text-lg font-semibold mb-4 text-[#0D6E78]">
 							Quick Links
 						</h3>
 						<ul className="space-y-2">
@@ -81,7 +81,7 @@ export default function Footer() {
 								<li key={item.label}>
 									<Link
 										href={item.href}
-										className="text-black hover:text-[#A21A1D] transition-colors"
+										className="text-black hover:text-[#0D6E78] transition-colors"
 									>
 										{item.label}
 									</Link>
@@ -90,7 +90,7 @@ export default function Footer() {
 						</ul>
 					</div>
 					<div>
-						<h3 className="text-lg font-semibold mb-4 text-[#A21A1D]">
+						<h3 className="text-lg font-semibold mb-4 text-[#0D6E78]">
 							Our Solutions
 						</h3>
 						<ul className="space-y-3">
@@ -98,7 +98,7 @@ export default function Footer() {
 								<li key={item.label}>
 									<Link
 										href={item.href}
-										className="flex items-center text-black hover:text-[#A21A1D] transition-colors"
+										className="flex items-center text-black hover:text-[#0D6E78] transition-colors"
 									>
 										{item.icon}
 										{item.label}
@@ -117,7 +117,7 @@ export default function Footer() {
 							<div className="flex space-x-4">
 								<a
 									href="#"
-									className="text-black hover:text-[#A21A1D] transition-colors"
+									className="text-black hover:text-[#0D6E78] transition-colors"
 								>
 									<span className="sr-only">LinkedIn</span>
 									<svg
@@ -135,7 +135,7 @@ export default function Footer() {
 								</a>
 								<a
 									href="#"
-									className="text-black hover:text-[#A21A1D] transition-colors"
+									className="text-black hover:text-[#0D6E78] transition-colors"
 								>
 									<span className="sr-only">Twitter</span>
 									<svg
@@ -149,7 +149,7 @@ export default function Footer() {
 								</a>
 								<a
 									href="#"
-									className="text-black hover:text-[#A21A1D] transition-colors"
+									className="text-black hover:text-[#0D6E78] transition-colors"
 								>
 									<span className="sr-only">GitHub</span>
 									<svg

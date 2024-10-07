@@ -49,7 +49,7 @@ export default function FeedTheNeedy() {
 			<div className="text-center mb-12">
 				<Typography
 					variant="h1"
-					color="red"
+					color="teal"
 					className="mb-4"
 					placeholder=""
 					onPointerEnterCapture={undefined}
@@ -85,7 +85,7 @@ export default function FeedTheNeedy() {
 
 			{/* Introduction Card */}
 			<Card
-				className="mb-12 bg-red-50"
+				className="mb-12 bg-[#0D6E78]"
 				placeholder=""
 				onPointerEnterCapture={undefined}
 				onPointerLeaveCapture={undefined}
@@ -245,7 +245,7 @@ export default function FeedTheNeedy() {
 										<div>
 											<Typography
 												variant="h3"
-												color="red"
+												color="teal"
 												placeholder=""
 												onPointerEnterCapture={undefined}
 												onPointerLeaveCapture={undefined}
@@ -270,7 +270,7 @@ export default function FeedTheNeedy() {
 
 					{/* Get Involved Card */}
 					<Card
-						className="bg-red-50"
+						className="bg-[#0D6E78]"
 						placeholder=""
 						onPointerEnterCapture={undefined}
 						onPointerLeaveCapture={undefined}
@@ -293,7 +293,7 @@ export default function FeedTheNeedy() {
 							<div className="flex flex-col space-y-4">
 								<Button
 									size="lg"
-									color="red"
+									color="teal"
 									className="flex items-center justify-center"
 									placeholder=""
 									onPointerEnterCapture={undefined}
@@ -318,7 +318,7 @@ export default function FeedTheNeedy() {
 								<Button
 									variant="outlined"
 									size="lg"
-									color="red"
+									color="teal"
 									placeholder=""
 									onPointerEnterCapture={undefined}
 									onPointerLeaveCapture={undefined}
@@ -328,7 +328,7 @@ export default function FeedTheNeedy() {
 								<Button
 									variant="text"
 									size="lg"
-									color="red"
+									color="teal"
 									placeholder=""
 									onPointerEnterCapture={undefined}
 									onPointerLeaveCapture={undefined}
@@ -365,7 +365,7 @@ export default function FeedTheNeedy() {
 									<Tooltip key={platform} content={`Share on ${platform}`}>
 										<IconButton
 											variant="outlined"
-											color="red"
+											color="teal"
 											placeholder=""
 											onPointerEnterCapture={undefined}
 											onPointerLeaveCapture={undefined}

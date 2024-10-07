@@ -7,7 +7,6 @@ import {
 	TabsHeader,
 } from "@material-tailwind/react";
 import About from "../components/about-components/About";
-import TabLeadership from "../components/about-components/TabLeadership";
 
 export default function page() {
 	const data = [
@@ -15,11 +14,6 @@ export default function page() {
 			label: "Who We Are",
 			value: "who-we-are",
 			desc: <About />,
-		},
-		{
-			label: "Leadership",
-			value: "leadership",
-			desc: <TabLeadership />,
 		},
 	];
 
@@ -29,7 +23,7 @@ export default function page() {
 				<TabsHeader
 					className="flex justify-center items-center bg-gray-200 p-2 w-full md:w-1/2 lg:w-1/4 mx-auto my-5"
 					indicatorProps={{
-						className: `bg-red-100 rounded-md shadow`,
+						className: `bg-[#0D6E78] rounded-md shadow`,
 					}}
 					placeholder=""
 					onPointerEnterCapture=""

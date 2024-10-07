@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
 			)}
 			<section className="bg-white p-10 md:p-14 rounded-xl shadow-lg max-w-3xl w-full space-y-6">
 				{/* Subheading */}
-				<h1 className="text-3xl font-bold text-red-600 text-center">
+				<h1 className="text-3xl font-bold text-[#0D6E78] text-center">
 					Get in Touch
 				</h1>
 
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
 							id="firstName"
 							name="firstName"
 							placeholder="First Name"
-							className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-500 focus:outline-none"
+							className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-[#0D6E78] focus:ring-2 focus:ring-[#0D6E78] focus:outline-none"
 							required
 						/>
 						<input
@@ -77,7 +77,7 @@ const Contact: React.FC = () => {
 							id="lastName"
 							name="lastName"
 							placeholder="Last Name"
-							className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-500 focus:outline-none"
+							className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-[#0D6E78] focus:ring-2 focus:ring-[#0D6E78] focus:outline-none"
 							required
 						/>
 					</div>
@@ -88,7 +88,7 @@ const Contact: React.FC = () => {
 						id="companyEmail"
 						name="companyEmail"
 						placeholder="Company Email"
-						className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-500 focus:outline-none"
+						className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-[#0D6E78] focus:ring-2 focus:ring-[#0D6E78] focus:outline-none"
 						required
 					/>
 
@@ -98,14 +98,14 @@ const Contact: React.FC = () => {
 						name="message"
 						placeholder="Your Message"
 						rows={5}
-						className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-red-500 focus:ring-2 focus:ring-red-500 focus:outline-none resize-none"
+						className="w-full bg-[#f5f5f5] p-4 rounded-lg border border-gray-300 focus:border-[#0D6E78] focus:ring-2 focus:ring-[#0D6E78] focus:outline-none resize-none"
 						required
 					></textarea>
 
 					{/* Submit Button */}
 					<button
 						type="submit"
-						className={`w-full py-3 text-lg font-semibold text-white bg-red-500 rounded-lg hover:bg-red-600 transition-colors duration-300 ${
+						className={`w-full py-3 text-lg font-semibold text-white bg-[#0D6E78] rounded-lg hover:bg-[#0D6E78] transition-colors duration-300 ${
 							isSubmitting ? "opacity-50 cursor-not-allowed" : ""
 						}`}
 						disabled={isSubmitting}

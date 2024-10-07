@@ -41,7 +41,7 @@ const CardItem: React.FC<CardItemProps> = ({
 				/>
 			</div>
 			<div className="w-full lg:w-1/2 p-6 lg:p-8 space-y-4 flex flex-col justify-center">
-				<h2 className="text-3xl lg:text-4xl font-bold text-red-700 mb-4">
+				<h2 className="text-3xl lg:text-4xl font-bold text-[#0D6E78] mb-4">
 					{title}
 				</h2>
 				<p className="text-gray-700 font-semibold">{description}</p>
@@ -51,7 +51,7 @@ const CardItem: React.FC<CardItemProps> = ({
 				</button> */}
 				<Link href={href} className="w-full">
 					<Button
-						color="red"
+						color="teal"
 						variant="text"
 						className="p-0 hover:p-4 w-full"
 						placeholder=""
@@ -118,7 +118,7 @@ const LongCard: React.FC = () => {
 	return (
 		<div className="mt-16 px-4 lg:px-0 max-w-7xl mx-auto">
 			<div className="flex justify-start mb-8">
-				<h1 className="text-xl uppercase font-bold text-red-700 border-b-2 border-red-500 pb-2">
+				<h1 className="text-xl uppercase font-bold text-[#0D6E78] border-b-2 border-[#0D6E78] pb-2">
 					Propelling Decarbonization With
 				</h1>
 			</div>

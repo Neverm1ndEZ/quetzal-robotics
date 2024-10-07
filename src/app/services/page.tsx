@@ -16,7 +16,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 			<img src={imageSrc} alt={title} className="w-full h-full object-cover" />
 		</div>
 		<div className="p-6">
-			<h3 className="text-xl font-bold text-[#BF1D25] mb-3">{title}</h3>
+			<h3 className="text-xl font-bold text-[#0D6E78] mb-3">{title}</h3>
 			<p className="text-gray-600">{description}</p>
 		</div>
 	</div>
@@ -66,7 +66,7 @@ export default function ServicesPage() {
 		<div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
 			<div className="max-w-7xl mx-auto">
 				<div className="text-center mb-12">
-					<h1 className="text-4xl font-bold text-[#A21A1D] mb-4">
+					<h1 className="text-4xl font-bold text-[#0D6E78] mb-4">
 						Our Services
 					</h1>
 					<p className="text-xl text-gray-600">

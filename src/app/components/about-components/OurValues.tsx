@@ -47,7 +47,7 @@ const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
 			>
 				<h3
 					className={`text-xl sm:text-2xl font-bold mb-3 transition-colors duration-300 ${
-						isHovered ? "text-white" : "text-red-700"
+						isHovered ? "text-white" : "text-[#0D6E78]"
 					}`}
 				>
 					{title}

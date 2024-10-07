@@ -5,10 +5,10 @@ import { Carousel } from "../../utils/util";
 
 export default function Hero() {
 	const images = [
-		"/banner.jpg",
-		// "/hydrogen.png",
-		// "/solar-new.jpg",
-		// "/wind-web.jpg",
+		"/banner-1.jpg",
+		"/banner-2.jpg",
+		"/banner-3.jpeg",
+		"/banner-4.jpeg",
 	];
 
 	return (
@@ -16,7 +16,7 @@ export default function Hero() {
 			<Carousel
 				autoplay={true}
 				loop={true}
-				autoplayDelay={5700}
+				autoplayDelay={2000}
 				className="w-full h-full"
 				navigation={({ setActiveIndex, activeIndex }) => (
 					<div className="absolute bottom-4 left-2/4 z-30 flex -translate-x-2/4 gap-2">

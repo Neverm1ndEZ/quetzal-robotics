@@ -53,10 +53,10 @@ interface StatProps {
 
 const Stat: React.FC<StatProps> = ({ value, label }) => (
 	<div className="group cursor-pointer">
-		<h1 className="text-2xl sm:text-3xl lg:text-4xl font-light transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:text-red-700">
+		<h1 className="text-2xl sm:text-3xl lg:text-4xl font-light transition-all duration-300 ease-out group-hover:-translate-y-2 group-hover:text-[#0D6E78]">
 			{value}
 		</h1>
-		<p className="font-light uppercase text-xs sm:text-sm pt-2 transition-colors duration-300 group-hover:text-red-600">
+		<p className="font-light uppercase text-xs sm:text-sm pt-2 transition-colors duration-300 group-hover:text-[#0D6E78]">
 			{label}
 		</p>
 	</div>
