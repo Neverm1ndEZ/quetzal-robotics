@@ -61,16 +61,6 @@ export default function Footer() {
 							cutting-edge solutions that revolutionize industries and enhance
 							human capabilities.
 						</p>
-						<div className="flex space-x-4">
-							{["ISO 9001", "CE", "RoHS"].map((cert) => (
-								<span
-									key={cert}
-									className="bg-slate-800 px-3 py-1 rounded-full text-sm text-black"
-								>
-									{cert}
-								</span>
-							))}
-						</div>
 					</div>
 					<div>
 						<h3 className="text-lg font-semibold mb-4 text-[#0D6E78]">

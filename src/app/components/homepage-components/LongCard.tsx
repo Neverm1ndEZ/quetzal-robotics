@@ -1,134 +1,89 @@
-"use client";
-import { Button } from "@material-tailwind/react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect } from "react";
+import React from "react";
 
-interface CardItemProps {
-	title: string;
+interface ServiceCardProps {
 	imageSrc: string;
-	imagePosition: "left" | "right";
+	title: string;
 	description: string;
-	longDescription: string;
-	href: string;
 }
 
-const CardItem: React.FC<CardItemProps> = ({
-	title,
+const ServiceCard: React.FC<ServiceCardProps> = ({
 	imageSrc,
-	imagePosition,
+	title,
 	description,
-	longDescription,
-	href,
-}) => {
-	return (
-		<div
-			className={`flex flex-col ${
-				imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row"
-			} items-stretch bg-white shadow-lg rounded-xl overflow-hidden`}
-			data-aos={imagePosition === "right" ? "fade-left" : "fade-right"}
-		>
-			<div className="w-full lg:w-1/2 h-64 lg:h-auto relative">
-				<Image
-					src={imageSrc}
-					alt={title}
-					fill
-					style={{ objectFit: "cover" }}
-					sizes="(max-width: 768px) 100vw, 50vw"
-					className="transition-transform duration-300 hover:scale-105"
-				/>
-			</div>
-			<div className="w-full lg:w-1/2 p-6 lg:p-8 space-y-4 flex flex-col justify-center">
-				<h2 className="text-3xl lg:text-4xl font-bold text-[#0D6E78] mb-4">
-					{title}
-				</h2>
-				<p className="text-gray-700 font-semibold">{description}</p>
-				<p className="text-gray-600 leading-relaxed">{longDescription}</p>
-				{/* <button className="mt-4 px-6 py-2 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors duration-300 self-start">
-					Learn More
-				</button> */}
-				<Link href={href} className="w-full">
-					<Button
-						color="teal"
-						variant="text"
-						className="p-0 hover:p-4 w-full"
-						placeholder=""
-						onPointerEnterCapture=""
-						onPointerLeaveCapture=""
-					>
-						{"Read More"}
-					</Button>
-				</Link>
-			</div>
+}) => (
+	<div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2">
+		<div className="h-48 relative">
+			<img src={imageSrc} alt={title} className="w-full h-full object-cover" />
 		</div>
-	);
-};
+		<div className="p-6">
+			<h3 className="text-xl font-bold text-[#0D6E78] mb-3">{title}</h3>
+			<p className="text-gray-600">{description}</p>
+		</div>
+	</div>
+);
 
-const LongCard: React.FC = () => {
-	useEffect(() => {
-		AOS.init({
-			duration: 1000,
-			easing: "ease-in-out",
-			once: true,
-		});
-	}, []);
-
-	const cardItems: CardItemProps[] = [
+export default function ServicesPage() {
+	const services: ServiceCardProps[] = [
 		{
-			title: "Ethanol Bio-Fuel Plant",
-			imageSrc: "/eth.jpg",
-			imagePosition: "right",
-			href: "/energy/ethanol",
+			imageSrc: "https://placehold.co/400x300",
+			title: "Machine Learning Integration",
 			description:
-				"Transforming agricultural resources into clean, renewable energy.",
-			longDescription:
-				"Our ethanol power plant represents a significant step towards sustainable energy production. We convert corn and other biomass feedstocks into ethanol, a renewable fuel that reduces redhouse gas emissions compared to fossil fuels. Our state-of-the-art facility not only produces clean energy but also supports local agriculture, creates jobs, and contributes to energy independence. We're continuously improving our processes to maximize efficiency and minimize environmental impact, exploring advanced fermentation techniques and waste-to-energy solutions to create a truly circular economy approach to power generation.",
+				"Advanced AI algorithms enabling robots to learn from experience and improve performance over time. Implementing neural networks for enhanced decision-making capabilities.",
 		},
 		{
-			title: "Solar Energy",
-			imageSrc: "/solar-new.jpg",
-			imagePosition: "left",
-			description: "Harnessing the power of the sun for a sustainable future.",
-			longDescription:
-				"Our solar energy solutions leverage cutting-edge photovoltaic technology to convert sunlight into clean, renewable electricity. We design and implement large-scale solar farms and rooftop installations, optimizing energy production while minimizing environmental impact. Our projects consider factors such as geographical location, solar radiation levels, and local climate conditions to ensure maximum efficiency and return on investment.",
-			href: "/energy/solar",
+			imageSrc: "https://placehold.co/400x300",
+			title: "Computer Vision Systems",
+			description:
+				"Cutting-edge visual perception systems allowing robots to understand and interact with their environment. Real-time object detection and tracking capabilities.",
 		},
 		{
-			title: "Wind Power",
-			imageSrc: "/wind_mobile.jpg",
-			imagePosition: "right",
-			href: "/energy/wind",
-			description: "Capturing the force of wind to generate clean electricity.",
-			longDescription:
-				"Our wind power initiatives focus on both onshore and offshore wind farm development. We utilize advanced turbine technology and sophisticated wind mapping techniques to identify optimal locations for wind energy harvesting. Our projects are designed to withstand various weather conditions while maximizing energy output. We also prioritize community engagement and environmental conservation in all our wind power developments.",
+			imageSrc: "https://placehold.co/400x300",
+			title: "Robotic Process Automation",
+			description:
+				"Streamline your operations with our RPA solutions. Custom-designed robots to automate repetitive tasks and increase efficiency in manufacturing processes.",
 		},
 		{
-			title: "Hydrogen Technology",
-			imageSrc: "/hydrogen.png",
-			imagePosition: "left",
-			href: "/energy/hydrogen",
-			description: "Pioneering hydrogen solutions for a zero-emission future.",
-			longDescription:
-				"We're at the forefront of hydrogen technology, developing innovative solutions for clean energy storage and transportation. Our focus includes red hydrogen production through electrolysis, hydrogen fuel cell technology for vehicles, and hydrogen storage solutions for grid stabilization. We're also exploring the integration of hydrogen in industrial processes to reduce carbon emissions in hard-to-abate sectors.",
+			imageSrc: "https://placehold.co/400x300",
+			title: "Deep Learning Research",
+			description:
+				"Pioneering research in deep learning applications for robotics. Developing next-generation algorithms for enhanced robot autonomy and decision-making.",
+		},
+		{
+			imageSrc: "https://placehold.co/400x300",
+			title: "Custom Robot Design",
+			description:
+				"Tailored robotic solutions designed to meet your specific needs. From concept to deployment, we create robots that solve your unique challenges.",
+		},
+		{
+			imageSrc: "https://placehold.co/400x300",
+			title: "Predictive Maintenance",
+			description:
+				"IoT-enabled preventive maintenance systems using advanced analytics to predict and prevent equipment failures before they occur.",
 		},
 	];
 
 	return (
-		<div className="mt-16 px-4 lg:px-0 max-w-7xl mx-auto">
-			<div className="flex justify-start mb-8">
-				<h1 className="text-xl uppercase font-bold text-[#0D6E78] border-b-2 border-[#0D6E78] pb-2">
-					Propelling Decarbonization With
-				</h1>
-			</div>
-			<div className="space-y-12">
-				{cardItems.map((item, index) => (
-					<CardItem key={index} {...item} />
-				))}
+		<div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+			<div className="max-w-7xl mx-auto">
+				<div className="text-center mb-12">
+					<h1 className="text-4xl font-bold text-[#0D6E78] mb-4">
+						Our Services
+					</h1>
+					<p className="text-xl text-gray-600">
+						Advancing the future of robotics with cutting-edge solutions
+					</p>
+				</div>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+					{services.map((service, index) => (
+						<ServiceCard
+							key={index}
+							imageSrc={service.imageSrc}
+							title={service.title}
+							description={service.description}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);
-};
-
-export default LongCard;
+}

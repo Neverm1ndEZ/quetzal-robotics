@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import Marquee from "react-fast-marquee";
 import Image from "next/image";
 
 interface ClientLogoProps {
@@ -16,49 +14,35 @@ const ClientLogo: React.FC<ClientLogoProps> = ({ imageSrc, name }) => (
 				alt={`${name} logo`}
 				layout="fill"
 				objectFit="contain"
-				className="grayscale hover:grayscale-0 transition-all duration-300"
+				className="transition-all duration-300"
 			/>
 		</div>
 	</div>
 );
 
-export const ClientShowcase: React.FC = () => {
-	const clients: ClientLogoProps[] = [
-		{
-			imageSrc: "/client1-logo.png",
-			name: "Tech Innovations",
-		},
-		{
-			imageSrc: "/client2-logo.png",
-			name: "StartUp Co",
-		},
-		{
-			imageSrc: "/client3-logo.png",
-			name: "Global Solutions",
-		},
-		{
-			imageSrc: "/client4-logo.png",
-			name: "Digital Dynamics",
-		},
-		{
-			imageSrc: "/client5-logo.png",
-			name: "Future Systems",
-		},
-		// Add more clients as needed
+const ClientShowcase = () => {
+	const clients = [
+		{ imageSrc: "/bp.jpeg", name: "Bharat Petroleum" },
+		{ imageSrc: "/fab.png", name: "First Abu Dhabi Bank" },
+		{ imageSrc: "/hul.jpg", name: "Hindustan Unilever" },
+		{ imageSrc: "/varma.png", name: "Varma Capital" },
+		// { imageSrc: "/api/placeholder/150/50", name: "Future Systems" },
 	];
 
 	return (
 		<div className="mt-16 px-4 lg:px-0 max-w-7xl mx-auto">
-			<div className="flex justify-start mb-8">
-				<h1 className="text-2xl uppercase font-bold text-[#0D6E78] border-b-2 border-[#0D6E78] pb-2">
+			<div className="mb-12">
+				<h2 className="text-center text-4xl font-bold text-[#0D6E78] mb-8">
 					Our Trusted Clients
-				</h1>
+				</h2>
+				<div className="flex flex-wrap justify-center items-center">
+					{clients.map((client, index) => (
+						<ClientLogo key={index} {...client} />
+					))}
+				</div>
 			</div>
-			<Marquee gradient={false} speed={50} pauseOnHover={true} className="py-8">
-				{clients.map((client, index) => (
-					<ClientLogo key={index} {...client} />
-				))}
-			</Marquee>
 		</div>
 	);
 };
+
+export default ClientShowcase;

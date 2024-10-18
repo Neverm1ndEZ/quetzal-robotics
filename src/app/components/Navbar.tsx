@@ -272,7 +272,7 @@ export function NavbarFinal() {
 				<div className="flex items-center justify-between text-blue-gray-900">
 					<Link href={"/"}>
 						<div className="flex items-center">
-							<Image src="/logo.png" alt="logo-ct" width={80} height={50} />
+							<Image src="/logo.png" alt="logo-ct" width={120} height={70} />
 						</div>
 					</Link>
 					<div className="hidden lg:block">

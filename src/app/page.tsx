@@ -2,7 +2,7 @@ import Contact from "./components/homepage-components/Contact";
 import Energy from "./components/homepage-components/Energy";
 import Hero from "./components/homepage-components/Hero";
 import LongCard from "./components/homepage-components/LongCard";
-import { ClientShowcase } from "./components/homepage-components/Testimonials";
+import ClientShowcase from "./components/homepage-components/Testimonials";
 
 export default function Home() {
 	return (
@@ -11,7 +11,6 @@ export default function Home() {
 			<div className="max-w-7xl mx-auto lg:px-8">
 				<Energy />
 				<LongCard />
-				{/* <Leadership /> */}
 				<ClientShowcase />
 				<Contact />
 			</div>
