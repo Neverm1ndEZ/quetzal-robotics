@@ -199,7 +199,7 @@ export default function page() {
 			</Card>
 
 			{/* Additional Information */}
-			<div className="mt-12 text-center">
+			{/* <div className="mt-12 text-center">
 				<Typography
 					className="text-gray-600"
 					placeholder=""
@@ -214,7 +214,7 @@ export default function page() {
 						iitmshanker@gmail.com
 					</a>
 				</Typography>
-			</div>
+			</div> */}
 		</div>
 	);
 }
