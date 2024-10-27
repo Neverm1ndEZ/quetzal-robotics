@@ -18,10 +18,10 @@ const NumbersSpeak: React.FC = () => {
 			<h1 className="text-3xl font-bold text-center mb-8">Numbers Speak</h1>
 			<div className="w-16 h-1 bg-[#0D6E78] mx-auto mb-12"></div>
 			<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-				<Stat value="800+" label="Projects completed" />
-				<Stat value="21" label="Countries served" />
-				<Stat value="4" label="Locations" />
-				<Stat value="200+" label="Clients" />
+				<Stat value="30+" label="Projects completed" />
+				<Stat value="13" label="Countries served" />
+				<Stat value="150+" label="Locations" />
+				<Stat value="21" label="Clients" />
 			</div>
 		</div>
 	);

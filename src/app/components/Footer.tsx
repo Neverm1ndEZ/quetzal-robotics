@@ -56,11 +56,6 @@ export default function Footer() {
 							height={120}
 							className="mb-4"
 						/>
-						<p className="text-black max-w-md mb-4">
-							Pioneering the future of robotics and automation. We develop
-							cutting-edge solutions that revolutionize industries and enhance
-							human capabilities.
-						</p>
 						<p className="text-black max-w-md mb-2">
 							Address: 91, Jamna Vihar, Saipura, Jaipur - 302018
 						</p>

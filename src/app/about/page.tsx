@@ -7,12 +7,12 @@ const AboutUs = () => {
 	const stats = [
 		{
 			icon: <Clock className="h-6 w-6" />,
-			value: "10+",
+			value: "8+",
 			label: "Years of Experience",
 		},
 		{
 			icon: <Award className="h-6 w-6" />,
-			value: "500+",
+			value: "30+",
 			label: "Projects Delivered",
 		},
 		{
