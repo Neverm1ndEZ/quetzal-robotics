@@ -30,7 +30,7 @@ export function CaseStudyContent({ study }: { study: CaseStudy }) {
 						src={study.solution.image1}
 						alt="Solution visualization 1"
 						fill
-						className="object-cover rounded-lg"
+						className="object-contain rounded-lg"
 					/>
 				</div>
 				<p className="text-gray-700 my-8">{study.solution.text}</p>

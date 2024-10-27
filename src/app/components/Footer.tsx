@@ -13,8 +13,8 @@ interface MenuItem {
 const mainMenuItems: MenuItem[] = [
 	{ label: "Home", href: "/" },
 	{ label: "Services", href: "/services" },
+	{ label: "Case Studies", href: "/case-studies" },
 	{ label: "About Us", href: "/about" },
-	{ label: "Sustainability", href: "/sustainability" },
 	{ label: "Careers", href: "/careers" },
 ];
 
@@ -61,6 +61,10 @@ export default function Footer() {
 							cutting-edge solutions that revolutionize industries and enhance
 							human capabilities.
 						</p>
+						<p className="text-black max-w-md mb-2">
+							Address: 91, Jamna Vihar, Saipura, Jaipur - 302018
+						</p>
+						<p className="text-black max-w-md mb-2">Contact: +91-99402-57433</p>
 					</div>
 					<div>
 						<h3 className="text-lg font-semibold mb-4 text-[#0D6E78]">

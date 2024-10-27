@@ -4,15 +4,15 @@ export const caseStudies: CaseStudy[] = [
 		id: "zerofill-machines",
 		title: "ZeroFill Machines",
 		client: "Unilever",
-		thumbnail: "/case-studies/zerofill-thumbnail.jpg",
+		thumbnail: "/case-studies/zerofill-2.jpeg",
 		background:
 			"Unilever's manufacturing facilities required a more efficient way to handle product filling operations. The existing manual processes were leading to inconsistencies in product quantities and significant wastage. As a global leader in consumer goods, maintaining precise control over product quantities while ensuring high-speed operations was crucial for their business efficiency.",
 		problem:
 			"Traditional filling machines were causing significant product wastage and operational inefficiencies. The manual calibration process was time-consuming and prone to errors, leading to inconsistent fill levels. This resulted in product wastage, increased production costs, and potential compliance issues with product weight regulations.",
 		solution: {
 			text: "We implemented state-of-the-art ZeroFill technology that utilizes advanced sensors and precise control mechanisms. The system combines real-time weight monitoring with adaptive filling algorithms to ensure accurate product dispensing. The solution includes automated calibration features and predictive maintenance capabilities to minimize downtime.",
-			image1: "/case-studies/zerofill-solution1.jpg",
-			image2: "/case-studies/zerofill-solution2.jpg",
+			image1: "/case-studies/zerofill-1.jpeg",
+			image2: "/case-studies/zerofill-2.jpeg",
 		},
 		impact: [
 			{

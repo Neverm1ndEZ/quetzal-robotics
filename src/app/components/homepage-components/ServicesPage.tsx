@@ -27,19 +27,19 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 export default function ServicesPage() {
 	const services: ServiceCardProps[] = [
 		{
-			imageSrc: "/mv.jpeg",
+			imageSrc: "/predictive.jpeg",
 			title: "Machine Vision in Manufacturing",
 			description:
 				"Utilizing advanced imaging technologies to enhance quality control and streamline production processes in manufacturing environments.",
 		},
 		{
-			imageSrc: "/automation.jpg",
+			imageSrc: "/auto.jpeg",
 			title: "Process Automation",
 			description:
 				"Implementing automated systems to optimize workflows, reduce human error, and increase operational efficiency across various industries.",
 		},
 		{
-			imageSrc: "/iot.jpg",
+			imageSrc: "/iot.jpeg",
 			title: "IoT Enabled Monitoring",
 			description:
 				"Leveraging IoT devices for real-time monitoring and data collection, enabling proactive decision-making and improved asset management.",
@@ -57,7 +57,7 @@ export default function ServicesPage() {
 				"Exploring the capabilities of generative AI to create innovative solutions, from content generation to design automation.",
 		},
 		{
-			imageSrc: "/predictive.jpg",
+			imageSrc: "/pred.jpeg",
 			title: "Predictive Maintenance",
 			description:
 				"IoT-enabled preventive maintenance systems using advanced analytics to predict and prevent equipment failures before they occur.",

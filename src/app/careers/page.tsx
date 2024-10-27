@@ -9,13 +9,13 @@ export default function page() {
 			icon: <Leaf className="w-8 h-8 text-[#0D6E78]" />,
 			title: "Sustainable Impact",
 			description:
-				"Make a real difference in the fight against climate change while working with cutting-edge renewable technologies.",
+				"Make a real difference in the fight against climate change while working with cutting-edge robotics technologies.",
 		},
 		{
 			icon: <Users className="w-8 h-8 text-[#0D6E78]" />,
 			title: "Collaborative Culture",
 			description:
-				"Join a team of passionate experts in renewable energy, fostering innovation and knowledge sharing.",
+				"Join a team of passionate experts in robotics and AI, fostering innovation and knowledge sharing.",
 		},
 		{
 			icon: <Trophy className="w-8 h-8 text-[#0D6E78]" />,
@@ -45,7 +45,7 @@ export default function page() {
 					onPointerEnterCapture={undefined}
 					onPointerLeaveCapture={undefined}
 				>
-					Be part of a team dedicated to revolutionizing the energy sector
+					Be part of a team dedicated to revolutionizing the robotics sector
 					through innovative, clean technologies.
 				</Typography>
 			</div>
@@ -209,9 +209,9 @@ export default function page() {
 					Have questions? Contact our HR team at{" "}
 					<a
 						href="mailto:careers@binnynewre.com"
-						className="text-[#0D6E78] hover:text-[#0D6E78]"
+						className="text-[#0D6E78] hover:text-[#04434a]"
 					>
-						careers@binnynewre.com
+						iitmshanker@gmail.com
 					</a>
 				</Typography>
 			</div>
