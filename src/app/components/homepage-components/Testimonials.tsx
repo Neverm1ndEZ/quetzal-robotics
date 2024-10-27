@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 interface ClientLogoProps {
 	imageSrc: string;
@@ -8,7 +9,7 @@ interface ClientLogoProps {
 
 const ClientLogo: React.FC<ClientLogoProps> = ({ imageSrc, name }) => (
 	<div className="mx-4">
-		<div className="relative h-16 w-32">
+		<div className="relative h-32 w-64 space-x-8">
 			<Image
 				src={imageSrc}
 				alt={`${name} logo`}
@@ -26,7 +27,6 @@ const ClientShowcase = () => {
 		{ imageSrc: "/fab.png", name: "First Abu Dhabi Bank" },
 		{ imageSrc: "/hul.jpg", name: "Hindustan Unilever" },
 		{ imageSrc: "/varma.png", name: "Varma Capital" },
-		// { imageSrc: "/api/placeholder/150/50", name: "Future Systems" },
 	];
 
 	return (
@@ -36,9 +36,11 @@ const ClientShowcase = () => {
 					Our Trusted Clients
 				</h2>
 				<div className="flex flex-wrap justify-center items-center">
-					{clients.map((client, index) => (
-						<ClientLogo key={index} {...client} />
-					))}
+					<Marquee gradient={false} speed={150}>
+						{clients.map((client, index) => (
+							<ClientLogo key={index} {...client} />
+						))}
+					</Marquee>
 				</div>
 			</div>
 		</div>

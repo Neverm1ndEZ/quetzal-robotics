@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
 import Image from "next/image";
-import { Modal } from "../Modal";
+import React from "react";
 
 interface SustainabilityCardProps {
 	imageSrc: string;
@@ -29,7 +28,6 @@ const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
 				{title}
 			</h3>
 			<p className="text-sm sm:text-base text-gray-600 mb-4">{description}</p>
-			<Modal buttonText="Read More" />
 		</div>
 	</div>
 );

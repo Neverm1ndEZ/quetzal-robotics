@@ -1,7 +1,7 @@
 import Contact from "./components/homepage-components/Contact";
-import Energy from "./components/homepage-components/Energy";
 import Hero from "./components/homepage-components/Hero";
-import LongCard from "./components/homepage-components/LongCard";
+import NumbersSpeak from "./components/homepage-components/NumbersSpeak";
+import ServicesPage from "./components/homepage-components/ServicesPage";
 import ClientShowcase from "./components/homepage-components/Testimonials";
 
 export default function Home() {
@@ -9,8 +9,8 @@ export default function Home() {
 		<main className="w-full sm:px-6 lg:px-0">
 			<Hero />
 			<div className="max-w-7xl mx-auto lg:px-8">
-				<Energy />
-				<LongCard />
+				<NumbersSpeak />
+				<ServicesPage />
 				<ClientShowcase />
 				<Contact />
 			</div>

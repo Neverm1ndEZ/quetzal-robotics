@@ -1,3 +1,5 @@
+"use client";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 interface ServiceCardProps {
@@ -25,42 +27,44 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 export default function ServicesPage() {
 	const services: ServiceCardProps[] = [
 		{
-			imageSrc: "https://placehold.co/400x300",
-			title: "Machine Learning Integration",
+			imageSrc: "/mv.jpeg",
+			title: "Machine Vision in Manufacturing",
 			description:
-				"Advanced AI algorithms enabling robots to learn from experience and improve performance over time. Implementing neural networks for enhanced decision-making capabilities.",
+				"Utilizing advanced imaging technologies to enhance quality control and streamline production processes in manufacturing environments.",
 		},
 		{
-			imageSrc: "https://placehold.co/400x300",
-			title: "Computer Vision Systems",
+			imageSrc: "/automation.jpg",
+			title: "Process Automation",
 			description:
-				"Cutting-edge visual perception systems allowing robots to understand and interact with their environment. Real-time object detection and tracking capabilities.",
+				"Implementing automated systems to optimize workflows, reduce human error, and increase operational efficiency across various industries.",
 		},
 		{
-			imageSrc: "https://placehold.co/400x300",
-			title: "Robotic Process Automation",
+			imageSrc: "/iot.jpg",
+			title: "IoT Enabled Monitoring",
 			description:
-				"Streamline your operations with our RPA solutions. Custom-designed robots to automate repetitive tasks and increase efficiency in manufacturing processes.",
+				"Leveraging IoT devices for real-time monitoring and data collection, enabling proactive decision-making and improved asset management.",
 		},
 		{
-			imageSrc: "https://placehold.co/400x300",
-			title: "Deep Learning Research",
+			imageSrc: "/ml-da.jpg",
+			title: "Machine Learning and Data Analytics",
 			description:
-				"Pioneering research in deep learning applications for robotics. Developing next-generation algorithms for enhanced robot autonomy and decision-making.",
+				"Applying machine learning techniques to analyze large datasets, uncover patterns, and drive data-informed business strategies.",
 		},
 		{
-			imageSrc: "https://placehold.co/400x300",
-			title: "Custom Robot Design",
+			imageSrc: "/gen-ai.jpeg",
+			title: "Generative AI",
 			description:
-				"Tailored robotic solutions designed to meet your specific needs. From concept to deployment, we create robots that solve your unique challenges.",
+				"Exploring the capabilities of generative AI to create innovative solutions, from content generation to design automation.",
 		},
 		{
-			imageSrc: "https://placehold.co/400x300",
+			imageSrc: "/predictive.jpg",
 			title: "Predictive Maintenance",
 			description:
 				"IoT-enabled preventive maintenance systems using advanced analytics to predict and prevent equipment failures before they occur.",
 		},
 	];
+
+	const router = useRouter();
 
 	return (
 		<div className="bg-gray-50 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -73,7 +77,10 @@ export default function ServicesPage() {
 						Advancing the future of robotics with cutting-edge solutions
 					</p>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+				<div
+					className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+					onClick={() => router.push("/services")}
+				>
 					{services.map((service, index) => (
 						<ServiceCard
 							key={index}

@@ -5,9 +5,10 @@ import { Carousel } from "../../utils/util";
 
 export default function Hero() {
 	const images = [
+		"/banner-3.jpg",
 		"/banner-1.jpg",
+		"/banner-5.jpg",
 		"/banner-2.jpg",
-		"/banner-3.jpeg",
 		"/banner-4.jpeg",
 	];
 

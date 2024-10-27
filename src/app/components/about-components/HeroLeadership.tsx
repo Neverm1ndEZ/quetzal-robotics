@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { Modal } from "../Modal";
 
 export default function HeroLeadership() {
 	return (
@@ -83,9 +82,7 @@ const BackgroundBlogCard: React.FC<BackgroundBlogCardProps> = ({
 							? "opacity-100 transform translate-y-0"
 							: "opacity-0 transform translate-y-4"
 					}`}
-				>
-					<Modal buttonText="Read More" heading={name} message={longMessage} />
-				</div>
+				></div>
 			</div>
 		</div>
 	);
